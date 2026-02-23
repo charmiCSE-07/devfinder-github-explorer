@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevFinder Pro</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark">
+
+<div class="container">
+
+<header>
+<h1>DevFinder</h1>
+<button id="themeToggle">🌙</button>
+</header>
+
+<div class="search-box">
+<input type="text" id="searchInput" placeholder="Enter GitHub username">
+<button id="searchBtn">Search</button>
+</div>
+
+<div class="compare-box">
+<input type="text" id="compareInput" placeholder="Compare with another username">
+<button id="compareBtn">Compare</button>
+</div>
+
+<div id="compareContainer" class="compare-container"></div>
+
+<div id="recentSearches" class="recent"></div>
+
+<div id="loading" class="loading">Loading...</div>
+
+<button id="downloadPDF" class="download-btn">Download Profile PDF</button>
+
+<div class="profile-card" id="profileCard" style="display:none;">
+<img id="avatar" class="avatar">
+<h2 id="name"></h2>
+<p id="username"></p>
+
+<div class="stats">
+<div><span id="repos"></span> Repos</div>
+<div><span id="followers"></span> Followers</div>
+<div><span id="following"></span> Following</div>
+</div>
+
+<canvas id="languageChart"></canvas>
+
+<h3 class="repo-title">Top Repositories</h3>
+<div id="repoList" class="repo-list"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
