@@ -37,7 +37,7 @@ It integrates the GitHub REST API to fetch real-time user data and displays it u
 3. Run using Live Server or localhost
 4. Search any GitHub username
 
-📌 What I Learned
+📌 What I Learned 
 
 - Working with REST APIs
 - Async/Await and Fetch
@@ -53,6 +53,8 @@ It integrates the GitHub REST API to fetch real-time user data and displays it u
 - Better comparison analytics
 - Contribution graph integration
 - UI animations & performance optimizations
+
+📱 Live Demo https://charmicse-07.github.io/devfinder-github-explorer/ 
 
 👩‍💻 Created by Charmi Parmar
 
